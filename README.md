@@ -1,6 +1,6 @@
-Survival-Game-S4G 🎮
+Survival-Game-S4G
 Description
-Survival Game is a project developed for the S4G portfolio, where the player must collect coins while avoiding enemies within a limited time. The game features two scenes: a menu and a gameplay area, with unique mechanics and an interface. All scripts and Unity setup were created by me as a solo developer.
+Survival Game is a project developed for the S4G portfolio, where the player must collect coins while avoiding enemies within a limited time. The game features two scenes: a menu and a gameplay area, with unique mechanics and an interface. All scripts and Unity setup were created by me.
 Features
 Scenes:
 
@@ -33,35 +33,20 @@ At the end of the time limit, the number of collected coins is displayed along w
 
 Technologies
 
-
-
-Tool
-Version
-
-
-
-Unity
-2022.3.10f1
-
-
+Unity 6.1
 C#
-Latest
-
-
-Animator
-Built-in
-
-
+Animator for animations
 UI System
-Built-in
 
+How to Run
 
-How to Run 🚀
-
-Download from GitHub: https://github.com/YourUsername/Survival-Game-S4G 
+Download from Github: link
 Open the project in Unity Hub.
 Load the MainMenu scene from Assets/Scenes/.
 Press Play or build for Windows/WebGL.
 
-Video Demo
-Watch Gameplay on YouTube <!-- Замени your-video-link
+
+
+Contact
+
+VSievolod Stupak | sevastupak090@gmail.com
