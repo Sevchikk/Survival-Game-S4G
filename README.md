@@ -3,7 +3,10 @@ Survival-Game-S4G
 Description
 
 Survival Game is a project developed for the S4G portfolio, where the player must collect coins while avoiding enemies within a limited time. The game features two scenes: a menu and a gameplay area, with unique mechanics and an interface. All scripts and Unity setup were created by me.
+
+
 Features
+
 Scenes:
 
 Menu: Contains "Play Game" and "Exit" buttons. A scene with models is displayed in the background.
