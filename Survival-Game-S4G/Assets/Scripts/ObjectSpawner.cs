@@ -56,11 +56,13 @@ public class ObjectSpawner : MonoBehaviour
                 Vector3 spawnPosition = GetRandomSpawnPosition();
                 if (spawnPosition != Vector3.zero)
                 {
+                    // Pick a random object from the array and spawn it
                     GameObject objectToSpawn = objectsToSpawn[Random.Range(0, objectsToSpawn.Length)];
                     GameObject spawnedObject = Instantiate(objectToSpawn, spawnPosition, Quaternion.identity);
                     activeObjects++;
-                    // Destroy object after lifetime to prevent clutter
-                    Destroy(spawnedObject, objectLifetime);
+
+                    // Start lifetime timer; counter is decremented inside the coroutine
+                    StartCoroutine(DestroyAfterLifetime(spawnedObject));
                 }
             }
             yield return new WaitForSeconds(spawnInterval);
@@ -90,11 +92,15 @@ public class ObjectSpawner : MonoBehaviour
     }
 
     /// <summary>
-    /// Updates the active object count when an object is destroyed.
+    /// Destroys the object after objectLifetime seconds and decrements the active counter.
     /// </summary>
-    private void OnObjectDestroyed(GameObject obj)
+    private IEnumerator DestroyAfterLifetime(GameObject obj)
     {
+        yield return new WaitForSeconds(objectLifetime);
         if (obj != null)
+        {
+            Destroy(obj);
             activeObjects = Mathf.Max(0, activeObjects - 1);
+        }
     }
 }

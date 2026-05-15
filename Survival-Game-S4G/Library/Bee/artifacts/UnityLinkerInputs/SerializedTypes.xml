@@ -27,6 +27,7 @@
 		<type fullname="UnityEngine.Rendering.ProbeVolumeTextureMemoryBudget" preserve="nothing" serialized="true"/>
 		<type fullname="UnityEngine.Rendering.RenderGraphGlobalSettings" preserve="nothing" serialized="true"/>
 		<type fullname="UnityEngine.Rendering.RenderGraphModule.Util.RenderGraphUtilsResources" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Rendering.RenderingDebuggerRuntimeResources" preserve="nothing" serialized="true"/>
 		<type fullname="UnityEngine.Rendering.RenderPipelineGraphicsSettingsContainer" preserve="nothing" serialized="true"/>
 		<type fullname="UnityEngine.Rendering.SerializedDictionary`2" preserve="nothing" serialized="true"/>
 		<type fullname="UnityEngine.Rendering.ShaderStrippingSetting" preserve="nothing" serialized="true"/>
@@ -96,6 +97,7 @@
 		<type fullname="UnityEngine.Events.PersistentListenerMode" preserve="nothing" serialized="true"/>
 		<type fullname="UnityEngine.RectOffset" preserve="nothing" serialized="true"/>
 		<type fullname="UnityEngine.Rendering.RenderPipelineGraphicsSettingsCollection" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.RenderingLayerMask" preserve="nothing" serialized="true"/>
 	</assembly>
 	<assembly fullname="UnityEngine.TextCoreFontEngineModule">
 		<type fullname="UnityEngine.TextCore.FaceInfo" preserve="nothing" serialized="true"/>

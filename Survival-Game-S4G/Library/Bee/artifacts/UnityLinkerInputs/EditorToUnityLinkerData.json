@@ -2949,6 +2949,14 @@
             "baseModule": "Core"
         },
         {
+            "name": "D3D12DeviceFilterLists",
+            "qualifiedName": "D3D12DeviceFilterLists",
+            "nativeNamespace": "",
+            "module": "Core",
+            "baseName": "NamedObject",
+            "baseModule": "Core"
+        },
+        {
             "name": "DefaultAsset",
             "qualifiedName": "DefaultAsset",
             "nativeNamespace": "",
