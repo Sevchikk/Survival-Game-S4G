@@ -6,7 +6,7 @@
 
 A 3D survival game developed as a portfolio piece for admission to the **S4G School for Games** (Game Engineering program). The player must collect coins while managing health, stamina, and fear within a limited time. Includes enemy AI, dash mechanics, environmental interactions, and a complete UI system.
 
-[**Play on Itch.io**](https://sevchikk.itch.io/survival-game-unity) | [**Source Code**](https://github.com/sevchikk/Unity-Survival-Game-S4G)
+[**Play on Itch.io**](https://sevchikk.itch.io/survival-game-unity)
 
 ---
 
@@ -70,24 +70,10 @@ git clone https://github.com/sevchikk/Unity-Survival-Game-S4G.git
 
 ---
 
-## 📸 Screenshots
-
-![Gameplay](Screenshots/gameplay.gif) *(add your own screenshot)*  
-![Gameplay 2](Screenshots/gameplay2.png) *(add your own screenshot)*
-
----
-
 ## 🔗 Links
 
 - **Playable build** – [Itch.io page](https://sevchikk.itch.io/survival-game-unity)
-- **Source code** – [GitHub repository](https://github.com/sevchikk/Unity-Survival-Game-S4G)
 - **S4G School for Games** – [game engineering program](https://www.school4games.net/game-engineering/)
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
 ---
 
