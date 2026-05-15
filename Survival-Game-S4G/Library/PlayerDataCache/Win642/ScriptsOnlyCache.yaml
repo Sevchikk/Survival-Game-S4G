@@ -2263,4 +2263,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Game.unity
-  playerPath: "C:/Users/Admin/Downloads/\u041D\u043E\u0432\u0430 \u043F\u0430\u043F\u043A\u0430/game_for_s4g.exe"
+  playerPath: C:/Users/Admin/Downloads/Survival-Game-S4G/game_for_s4g.exe
