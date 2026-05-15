@@ -49,18 +49,9 @@ A 3D survival game developed as a portfolio piece for admission to the **S4G Sch
 ### Open in Unity Hub
 
 1. Open **Unity Hub**.
-2. Click **Add project** → select the cloned folder.
+2. Click **Add project** → select the folder.
 3. Ensure Unity version **2022.3 LTS** or higher (project built with Unity 6.1).
-4. Once loaded, open `Assets/Scenes/MainMenu.unity`.
-5. Press **Play** in the Editor or build for your platform.
-
-### Build the game
-
-1. Go to `File → Build Settings`.
-2. Select your target platform (Windows / Mac / Linux / WebGL).
-3. Ensure both scenes (`MainMenu` and `Game`) are checked.
-4. Click **Build** and choose an output folder.
-5. *(For WebGL)* – set compression format to **Gzip** or **Disabled**.
+4. Press **Play** in the Editor.
 
 ---
 
