@@ -46,12 +46,6 @@ A 3D survival game developed as a portfolio piece for admission to the **S4G Sch
 
 ## 📦 Getting Started
 
-### Clone the repository
-
-```bash
-git clone https://github.com/sevchikk/Unity-Survival-Game-S4G.git
-```
-
 ### Open in Unity Hub
 
 1. Open **Unity Hub**.
