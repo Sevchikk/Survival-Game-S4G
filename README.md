@@ -1,49 +1,95 @@
-Survival-Game-S4G
+# Survival Game – Unity C# Project
 
-Description
-Survival Game is a project developed for the S4G portfolio, where the player must collect coins while avoiding enemies within a limited time. The game features two scenes: a menu and a gameplay area, with unique mechanics and an interface. All scripts and Unity setup were created by me.
+![Unity](https://img.shields.io/badge/Unity-100000?style=flat-square&logo=unity&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
+A 3D survival game developed as a portfolio piece for admission to the **S4G School for Games** (Game Engineering program). The player must collect coins while managing health, stamina, and fear within a limited time. Includes enemy AI, dash mechanics, environmental interactions, and a complete UI system.
 
-Features
+[**Play on Itch.io**](https://sevchikk.itch.io/survival-game-unity) | [**Source Code**](https://github.com/sevchikk/Unity-Survival-Game-S4G)
 
-Scenes:
-Menu: Contains "Play Game" and "Exit" buttons. A scene with models is displayed in the background.
-Game: The goal is to collect as many coins as possible while avoiding enemies within a set time.
+---
 
-Player Mechanics:
-A stamina bar gradually fills; when full, a portion of stamina is consumed, granting a dash (up to 3 dashes).
-Collecting coins restores health.
+## ✨ Features
 
-Enemies:
-Deal physical damage and intimidation damage, increasing the player’s fear. When fear is maxed out, the player starts losing health.
+- **Player Mechanics** – walk, run, dash (up to 3 dashes with stamina consumption), health system
+- **Two Stat Systems** – physical damage and intimidation (fear) affecting gameplay
+- **Enemy AI** – three-state behavior (patrol, chase, attack) with timers, no coroutines
+- **Environmental Interaction** – tree sway simulation with Perlin noise and uprooting via physics forces
+- **Dynamic UI** – real‑time health, fear, stamina, and dash icons; configurable settings panel
+- **Death & Respawn System** – lose coins upon respawn with increasing fear; time limit end screen
+- **Clean Architecture** – separated concerns: `Player` (data), `PlayerDamageHandler`, `PlayerMovement`
+- **Computed Properties** – `_isPlayerInRange =>` for readable state checks
 
-Fear:
-Decreases by 1 unit every 10 seconds if the player takes no damage.
+---
 
-Interface:
-Icons for health, fear, and dashes on the HUD change based on the player’s stats.
-Displays the number of collected coins and remaining time.
-A settings button opens a panel with "Menu" and "Exit" options.
+## 🛠️ Built With
 
-Events:
-Upon death, a panel appears with options to respawn (losing 10 coins and increasing fear) or return to the menu.
-At the end of the time limit, the number of collected coins is displayed along with a "Menu" button.
+- **Unity 6.1** (C#)
+- **Rigidbody physics** with `MovePosition` for smooth movement
+- **Animator** for player and enemy animations
+- **Procedural tree sway** using Perlin noise
+- **Version control** – Git (GitHub Desktop)
 
+---
 
-Technologies
-Unity 6.1
-C#
-Animator for animations
-UI System
+## 🎮 Controls
 
+| Action          | Keys                          |
+| :-------------- | :---------------------------- |
+| Move            | `WASD` / Arrow keys           |
+| Run             | Hold `Left Shift`             |
+| Dash            | `Space` (consumes stamina)    |
+| Menu navigation | Mouse                         |
 
-How to Run
-Download from Github: link
-Open the project in Unity Hub.
-Load the MainMenu scene from Assets/Scenes/.
-Press Play or build for Windows/WebGL.
+---
 
+## 📦 Getting Started
 
-Contact
+### Clone the repository
 
-VSievolod Stupak | sevastupak090@gmail.com
+```bash
+git clone https://github.com/sevchikk/Unity-Survival-Game-S4G.git
+```
+
+### Open in Unity Hub
+
+1. Open **Unity Hub**.
+2. Click **Add project** → select the cloned folder.
+3. Ensure Unity version **2022.3 LTS** or higher (project built with Unity 6.1).
+4. Once loaded, open `Assets/Scenes/MainMenu.unity`.
+5. Press **Play** in the Editor or build for your platform.
+
+### Build the game
+
+1. Go to `File → Build Settings`.
+2. Select your target platform (Windows / Mac / Linux / WebGL).
+3. Ensure both scenes (`MainMenu` and `Game`) are checked.
+4. Click **Build** and choose an output folder.
+5. *(For WebGL)* – set compression format to **Gzip** or **Disabled**.
+
+---
+
+## 📸 Screenshots
+
+![Gameplay](Screenshots/gameplay.gif) *(add your own screenshot)*  
+![Gameplay 2](Screenshots/gameplay2.png) *(add your own screenshot)*
+
+---
+
+## 🔗 Links
+
+- **Playable build** – [Itch.io page](https://sevchikk.itch.io/survival-game-unity)
+- **Source code** – [GitHub repository](https://github.com/sevchikk/Unity-Survival-Game-S4G)
+- **S4G School for Games** – [game engineering program](https://www.school4games.net/game-engineering/)
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
+
+---
+
+**Made by Vsevolod (Seva) Stupak** – solo developer (code, design, assets).  
+*July 2025*
