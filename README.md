@@ -73,7 +73,6 @@ git clone https://github.com/sevchikk/Unity-Survival-Game-S4G.git
 ## 🔗 Links
 
 - **Playable build** – [Itch.io page](https://sevchikk.itch.io/survival-game-unity)
-- **S4G School for Games** – [game engineering program](https://www.school4games.net/game-engineering/)
 
 ---
 
