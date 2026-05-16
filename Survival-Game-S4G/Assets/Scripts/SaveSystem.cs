@@ -61,9 +61,9 @@ public class SaveSystem : MonoBehaviour
     /// </summary>
     public void SaveCurrentState()
     {
-        PlayerPrefs.SetFloat(POSITION_X_KEY, transform.position.x);
-        PlayerPrefs.SetFloat(POSITION_Y_KEY, transform.position.y);
-        PlayerPrefs.SetFloat(POSITION_Z_KEY, transform.position.z);
+        PlayerPrefs.SetFloat(POSITION_X_KEY, player.transform.position.x);
+        PlayerPrefs.SetFloat(POSITION_Y_KEY, player.transform.position.y);
+        PlayerPrefs.SetFloat(POSITION_Z_KEY, player.transform.position.z);
         PlayerPrefs.SetFloat(STAMINA_KEY, player.GetStamina());
         PlayerPrefs.SetFloat(FEAR_KEY, player.GetFear());
         PlayerPrefs.SetFloat(HP_KEY, player.GetHP());
