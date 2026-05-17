@@ -1,65 +1,49 @@
-# Survival Game – Unity C# Project
+Survival-Game-S4G
 
-![Unity](https://img.shields.io/badge/Unity-100000?style=flat-square&logo=unity&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+Description
+Survival Game is a project developed for the S4G portfolio, where the player must collect coins while avoiding enemies within a limited time. The game features two scenes: a menu and a gameplay area, with unique mechanics and an interface. All scripts and Unity setup were created by me.
 
-A 3D survival game developed as a portfolio piece for admission to the **S4G School for Games** (Game Engineering program). The player must collect coins while managing health, stamina, and fear within a limited time. Includes enemy AI, dash mechanics, environmental interactions, and a complete UI system.
 
-[**Play on Itch.io**](https://sevchikk.itch.io/survival-game-unity)
+Features
 
----
+Scenes:
+Menu: Contains "Play Game" and "Exit" buttons. A scene with models is displayed in the background.
+Game: The goal is to collect as many coins as possible while avoiding enemies within a set time.
 
-## ✨ Features
+Player Mechanics:
+A stamina bar gradually fills; when full, a portion of stamina is consumed, granting a dash (up to 3 dashes).
+Collecting coins restores health.
 
-- **Player Mechanics** – walk, run, dash (up to 3 dashes with stamina consumption), health system
-- **Two Stat Systems** – physical damage and intimidation (fear) affecting gameplay
-- **Enemy AI** – three-state behavior (patrol, chase, attack) with timers, no coroutines
-- **Environmental Interaction** – tree sway simulation with Perlin noise and uprooting via physics forces
-- **Dynamic UI** – real‑time health, fear, stamina, and dash icons; configurable settings panel
-- **Death & Respawn System** – lose coins upon respawn with increasing fear; time limit end screen
-- **Clean Architecture** – separated concerns: `Player` (data), `PlayerDamageHandler`, `PlayerMovement`
-- **Computed Properties** – `_isPlayerInRange =>` for readable state checks
+Enemies:
+Deal physical damage and intimidation damage, increasing the player’s fear. When fear is maxed out, the player starts losing health.
 
----
+Fear:
+Decreases by 1 unit every 10 seconds if the player takes no damage.
 
-## 🛠️ Built With
+Interface:
+Icons for health, fear, and dashes on the HUD change based on the player’s stats.
+Displays the number of collected coins and remaining time.
+A settings button opens a panel with "Menu" and "Exit" options.
 
-- **Unity 6.1** (C#)
-- **Rigidbody physics** with `MovePosition` for smooth movement
-- **Animator** for player and enemy animations
-- **Procedural tree sway** using Perlin noise
-- **Version control** – Git (GitHub Desktop)
+Events:
+Upon death, a panel appears with options to respawn (losing 10 coins and increasing fear) or return to the menu.
+At the end of the time limit, the number of collected coins is displayed along with a "Menu" button.
 
----
 
-## 🎮 Controls
+Technologies
+Unity 6.1
+C#
+Animator for animations
+UI System
 
-| Action          | Keys                          |
-| :-------------- | :---------------------------- |
-| Move            | `WASD` / Arrow keys           |
-| Run             | Hold `Left Shift`             |
-| Dash            | `Space` (consumes stamina)    |
-| Menu navigation | Mouse                         |
 
----
+How to Run
+Download from Github: link
+Open the project in Unity Hub.
+Load the MainMenu scene from Assets/Scenes/.
+Press Play or build for Windows/WebGL.
 
-## 📦 Getting Started
 
-### Open in Unity Hub
+Contact
 
-1. Open **Unity Hub**.
-2. Click **Add project** → select the folder.
-3. Ensure Unity version **2022.3 LTS** or higher (project built with Unity 6.1).
-4. Press **Play** in the Editor.
-
----
-
-## 🔗 Links
-
-- **Playable build** – [Itch.io page](https://sevchikk.itch.io/survival-game-unity)
-
----
-
-**Made by Vsevolod (Seva) Stupak** – solo developer (code, design, assets).  
-*July 2025*
+VSievolod Stupak | sevastupak090@gmail.com
